@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+</head>
+<body>
+    
+    <header></header>
+    <nav></nav>
+    <section>
+        <h6>{{3-2}}</h6>
+        <div id="myApp">
+            <!-- -->
+            <h1>Hola mundo</h1>
+            <h6>{{3-2}}</h6>
+            <p>{{[1,2,3,4,5,6,7]}}</p>
+            <p>{{true?'verdad':'falso'}}</p>
+            
+            
+            <p>{{mensaje}}</p>
+            <p>{{valor}}</p>
+            <button @click="cambiarMensaje">Cambiar mensaje</button>
+            <button @click="sumar">Sumar</button>
+            <hr/>
+            <p>{{lista}}</p>
+            <label for="id_nmbr">Nombre:</label>
+            <input id="id_nmbr"  type="text" v-model="nombre">
+            <label for="id_edad">Edad:</label>
+            <input id="id_edad" @keypress.enter="pesionandoteclaMod" type="number" v-model="edad">
+            <button @click='agregar'>Agregar</button>
+            {{nombre}}
+            {{edad}}
+            <ul>
+                <li v-for="({nombre,edad},index) in lista"> 
+                    <p v-if="nombre!==undefined">{{index +1}}: {{nombre}} - {{edad}}</p>
+                    <button v-if="nombre!==undefined" @click='borrar'>borrar</button>
+                </li>
+            </ul>
+        </div>
+        
+
+    </section>
+    <footer></footer>
+</body>
+</html>
+<script src="../js/app.js"></script>

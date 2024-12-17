@@ -1,0 +1,88 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+   background: black;
+   text-align: center;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    color: black;
+    background-color: #FCEE0A;
+    font: bold 14px verdana;
+    border-radius: 10px;
+    border: solid;
+    padding: 10px 12px;
+}
+ .menu li:hover{
+    color: #FCEE0A;
+    background-color: black;
+ }
+
+ .head{
+    text-align: center;
+ }
+
+ .menu{
+    padding-left: 0px;
+    background-color: black;
+    text-align: center;
+ }
+
+ h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:fantasy;
+ }
+ .agrupar{
+    border: 1px solid gray;
+     background: linear-gradient(to top,#FCEE0A,black,#FCEE0A);
+     width: 900px;
+     margin: 20px auto;
+ }
+ .cabecera{
+   text-align: center;
+   border: 10px double black;
+   border-radius: 10px;
+   background-color: #FCEE0A;
+ }
+ .seccion{
+   float: left;
+   width: 600px;
+   margin: 10px;
+ }
+ article{
+   background: #FCEE0A;
+   border: solid;
+   border-radius: 10px;
+   margin-bottom: 35px;
+   padding: 20px;
+ }
+ time{
+   color: goldenrod;
+ }
+ footer h5{
+   text-align: right;
+ }
+ #aside_id{
+   width: 250px;
+   float: right;
+   margin: 20px 0px;
+ }
+ .pie_pagina{
+   clear: both;
+   background-color: #FCEE0A;
+ }
+ #cyberpunk, #chiva2{
+   height: 300px;
+ }
+#aside_id blockquote{
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #FCEE0A;
+   margin-bottom: 15px;
+}
